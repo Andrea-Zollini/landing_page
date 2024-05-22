@@ -8,12 +8,20 @@ import Main from "../components/Main.astro";
 ---
 
 <App>
-  <Container>
-    <Hero />
-  </Container>
-  <Container>
-    <Main />
-  </Container>
+  <div class="bg-image">
+    <Container>
+      <Hero />
+      <Main />
+    </Container>
+  </div>
   <Slider />
   <LowSection />
 </App>
+
+<style>
+  .bg-image {
+    background-image: url("../../assets/images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+</style>
