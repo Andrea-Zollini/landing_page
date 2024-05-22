@@ -3,11 +3,17 @@ import App from "../layouts/app.astro";
 import Container from "../components/ui/Container.astro";
 import Slider from "../components/Slider.astro";
 import LowSection from "../components/LowSection.astro";
+import Hero from "../components/Hero.astro";
+import Main from "../components/Main.astro";
 ---
 
 <App>
-  <Container> Hero </Container>
-  <Container> Main </Container>
+  <Container>
+    <Hero />
+  </Container>
+  <Container>
+    <Main />
+  </Container>
   <Slider />
   <LowSection />
 </App>

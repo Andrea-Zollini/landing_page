@@ -6,6 +6,13 @@ interface Props {
 const { label } = Astro.props;
 ---
 
-<button class="bg-orange-500 px-7 py-3 rounded-full">
+<button class="bg-orange-500 px-7 py-3 rounded-full shadow-bottom">
   <a href="#" class="font-bold text-white capitalize">{label}</a>
 </button>
+
+<style>
+  .shadow-bottom {
+    box-shadow: 0 4px 10px -1px rgb(255, 72, 0);
+    /* 0 2px 4px -1px rgb(255, 72, 0); */
+  }
+</style>
