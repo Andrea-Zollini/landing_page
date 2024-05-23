@@ -1,13 +1,15 @@
 ---
 interface Props {
   label: string;
+  bg_class: string;
+  text_color: string;
 }
 
-const { label } = Astro.props;
+const { label, bg_class, text_color } = Astro.props;
 ---
 
-<button class="bg-orange-500 px-7 py-3 rounded-full shadow-bottom">
-  <a href="#" class="font-bold text-white capitalize">{label}</a>
+<button class=`${bg_class} px-7 py-3 rounded-full shadow-bottom`>
+  <a href="#" class=`font-bold ${text_color} capitalize`>{label}</a>
 </button>
 
 <style>

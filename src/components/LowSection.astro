@@ -1,1 +1,29 @@
-<div>Low Section</div>
+---
+import Container from "./ui/Container.astro";
+import Button from "./ui/Button.astro";
+---
+
+<div class="bg-orange-600 py-11 bg-image">
+  <Container>
+    <div class="flex justify-between items-center">
+      <h2 class="text-4xl text-white py-11 font-bold">
+        Simplify how your team <br /> works today.
+      </h2>
+      <div>
+        <Button
+          label="Get Started"
+          bg_class="bg-white"
+          text_color="text-orange-600"
+        />
+      </div>
+    </div>
+  </Container>
+</div>
+
+<style>
+  .bg-image {
+    background-image: url("../../assets/images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
