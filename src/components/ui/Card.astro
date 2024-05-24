@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  quote: string;
+  svg: string;
+}
+
+const { name, quote, svg } = Astro.props;
+---
+
+<div>
+  <img src=`../../assets/images/${svg}` alt=`${name}` />
+  <p>{name}</p>
+  <p>{quote}</p>
+</div>
