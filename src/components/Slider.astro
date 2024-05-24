@@ -1,5 +1,6 @@
 ---
 import Card from "./ui/Card.astro";
+import Button from "./ui/Button.astro";
 const reviews = [
   {
     name: "Anisha Li",
@@ -51,7 +52,8 @@ function addAnimation() {
 }
 </script>
 
-<div class="scroller py-5 my-11">
+<div class="scroller py-5">
+  <h2 class="text-center title text-5xl font-bold">What they've said</h2>
   <ul class="scroller__inner flex">
     {
       reviews.map((review, index) => (
@@ -61,13 +63,21 @@ function addAnimation() {
       ))
     }
   </ul>
+  <div class="text-center mt-11 text-sm">
+    <Button label="Get Started" bg_class="bg-orange-600" text_color="text-white"/>
+  </div>
 </div>
 
 
 <style>
+
+  .title {
+    margin-bottom: 120px;
+  }
   .scroller {
     /* max-width: 1800px; */
     /* outline: 3px solid lime; */
+    margin: 150px 0;
   }
 
   .scroller__inner {
