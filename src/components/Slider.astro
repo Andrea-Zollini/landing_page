@@ -33,7 +33,7 @@ const reviews = [
     {
       reviews.map((review, index) => (
         <li>
-          <Card name={review.name} quote={review.quote} svg={review.svg} />
+          <Card name={review.name} quote={review.quote} svg=`/images/${review.svg}` />
         </li>
       ))
     }

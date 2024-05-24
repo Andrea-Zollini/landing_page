@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 interface Props {
   name: string;
   quote: string;
@@ -8,8 +9,10 @@ interface Props {
 const { name, quote, svg } = Astro.props;
 ---
 
-<div>
-  <img src=`../../assets/images/${svg}` alt=`${name}` />
+<div class="flex flex-col items-center">
+  <div>
+    <Image src={svg} alt=`${name}` width={100} height={100} />
+  </div>
   <p>{name}</p>
   <p>{quote}</p>
 </div>
