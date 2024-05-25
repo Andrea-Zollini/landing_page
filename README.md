@@ -1,7 +1,1 @@
-# Things to do
-
-    - Header
-    - Hero
-    - Main
-    - Other Section
-    - Footer
+Astro Landing Page
